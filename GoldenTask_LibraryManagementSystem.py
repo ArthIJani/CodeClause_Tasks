@@ -48,7 +48,7 @@ class Student():
 
 if __name__ == "__main__":
 
-    Delhilibrary = Library(
+    Arthlibrary = Library(
         ["vistas", "invention", "rich&poor", "indian", "macroeconomics", "microeconomics"])
     student = Student()
     track = []
@@ -62,14 +62,14 @@ if __name__ == "__main__":
             usr_response = int(input("Enter your choice: "))
 
             if usr_response == 1:  # listing
-                Delhilibrary.displayAvailableBooks()
+                Arthlibrary.displayAvailableBooks()
             elif usr_response == 2:  # borrow
-                Delhilibrary.borrowBook(
+                Arthlibrary.borrowBook(
                     input("Enter your name: "), student.requestBook())
             elif usr_response == 3:  # return
-                Delhilibrary.returnBook(student.returnBook())
+                Arthlibrary.returnBook(student.returnBook())
             elif usr_response == 4:  # donate
-                Delhilibrary.donateBook(student.donateBook())
+                Arthlibrary.donateBook(student.donateBook())
             elif usr_response == 5:  # track
                 for i in track:
                     for key, value in i.items():
